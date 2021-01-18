@@ -36,11 +36,13 @@ public class Weapon : MonoBehaviour
     public bool Fire(Vector3 position, Vector3 direction)
     {
 
-        if(fireTimer >= fireRate)
+        if (fireTimer >= fireRate && ammo > 0)
         {
+            ammo--;
             fireTimer = 0;
             GameObject gameObject = Instantiate(bullet, position, Quaternion.identity);
             gameObject.GetComponent<Bullet>().Fire(direction);
+            Debug.LogWarning(ammo + " shots left");
             return true;
         }
         else
