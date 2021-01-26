@@ -11,15 +11,12 @@ public class Factory : MonoBehaviour
     [Range(0,5)] public float productionRate = 0.5f;
     float prodcuctionTimer = 0;
 
-    // Update is called once per frame
     void Update()
     {
-        prodcuctionTimer += Time.deltaTime;
-        //if (Input.GetKeyDown(KeyCode.Q))
-        //{
-        //    GameObject gameObject = Instantiate(prefab, transform);
-        //    Destroy(gameObject, 5);
-        //}
+        if (Game.Instance.State == Game.eState.Game)
+        {
+            prodcuctionTimer += Time.deltaTime;
+        }
 
         if (prodcuctionTimer > productionRate)
         {

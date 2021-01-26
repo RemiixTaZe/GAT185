@@ -23,7 +23,7 @@ public class Target : MonoBehaviour
         if (collision.gameObject.CompareTag("Projectile"))
         {
             Game.Instance.AddPoints(points);
-            GameObject.Destroy(this.gameObject,.01f);
+            GameObject.Destroy(this.gameObject ,.01f);
             GameObject.Destroy(collision.gameObject,.01f);
         }
     }
