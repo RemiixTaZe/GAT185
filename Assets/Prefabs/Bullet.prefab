@@ -48,7 +48,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 563303cc2ec3db349bf6b025649063fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lifeSpan: 2
   speed: 61.7
+  angle: 0
+  destroyOnHit: 0
+  destroyFX: {fileID: 0}
 --- !u!33 &5141438941517224894
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -136,7 +140,8 @@ AudioSource:
   m_GameObject: {fileID: 5141438941517224890}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1069196202188014429, guid: d6ce1bdbc081ada4da69048b389641ea,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 39cb517725cf7734a865d2685b91e8c9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1

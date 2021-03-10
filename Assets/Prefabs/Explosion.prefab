@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!135 &-204977272726027768
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9187749000459014779}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!82 &4295714394894871157
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9,7 +22,8 @@ AudioSource:
   m_GameObject: {fileID: 9187749000459014779}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -1069196202188014429, guid: d6ce1bdbc081ada4da69048b389641ea,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b32c07605a0dffe4f9b08b60edbb1c54, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -96,6 +110,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1358809834186282293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9187749000459014779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f0970f4995f15445b8efffa34683b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 300
+  damage: 10
+  isRadial: 1
+--- !u!114 &8164170336996801129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9187749000459014779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f61620a63371b4caf369aef9660649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeTime: 3
 --- !u!1001 &9189342031554609565
 PrefabInstance:
   m_ObjectHideFlags: 0
